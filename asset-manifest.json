@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/kigaliFilmsandTelevisionSchool/static/css/main.efcf865f.css",
+    "main.js": "/kigaliFilmsandTelevisionSchool/static/js/main.c036ff77.js",
+    "static/js/453.6e0e63d7.chunk.js": "/kigaliFilmsandTelevisionSchool/static/js/453.6e0e63d7.chunk.js",
+    "index.html": "/kigaliFilmsandTelevisionSchool/index.html",
+    "main.efcf865f.css.map": "/kigaliFilmsandTelevisionSchool/static/css/main.efcf865f.css.map",
+    "main.c036ff77.js.map": "/kigaliFilmsandTelevisionSchool/static/js/main.c036ff77.js.map",
+    "453.6e0e63d7.chunk.js.map": "/kigaliFilmsandTelevisionSchool/static/js/453.6e0e63d7.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.efcf865f.css",
+    "static/js/main.c036ff77.js"
+  ]
+}
