@@ -105,13 +105,13 @@ const Counter = ({ target, duration = 2000 }) => {
           className="absolute inset-0 z-0"
         >
           <SwiperSlide>
-            <img src="D2.jpg" alt="Slide 2" className="w-full h-full object-cover" />
+            <img src="./D2.jpg" alt="Slide 2" className="w-full h-full object-cover" />
           </SwiperSlide>
           <SwiperSlide>
-            <img src="D1.jpg" alt="Slide 1" className="w-full h-full object-cover" />
+            <img src="./D1.jpg" alt="Slide 1" className="w-full h-full object-cover" />
           </SwiperSlide>
           <SwiperSlide>
-            <img src="D3.jpg" alt="Slide 3" className="w-full h-full object-cover" />
+            <img src="./D3.jpg" alt="Slide 3" className="w-full h-full object-cover" />
           </SwiperSlide>
         </Swiper>
 
