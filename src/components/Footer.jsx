@@ -21,9 +21,7 @@ const Footer = () => {
         <div className="flex flex-col space-y-3 items-center md:items-start">
           <h1 className="text-lg font-semibold text-[#ff0000]">Links</h1>
           <a href="/" className="hover:underline text-gray-700">Home</a>
-          <a href="/about" className="hover:underline text-gray-700">About Us</a>
           <a href="/programs" className="hover:underline text-gray-700">Programs</a>
-          <a href="/media" className="hover:underline text-gray-700">Media</a>
           <a href="/contact" className="hover:underline text-gray-700">Contact</a>
         </div>
 
@@ -31,8 +29,8 @@ const Footer = () => {
         <div className="flex flex-col space-y-3 items-center md:items-start">
           <h1 className="text-lg font-semibold text-[#ff0000]">Contacts</h1>
           <p className="text-gray-700">📍 Kigali, Rwanda</p>
-          <p className="text-gray-700">📞 +250 788 123 456</p>
-          <p className="text-gray-700">✉ info@kigalifilmacademy.com</p>
+          <p className="text-gray-700">📞 +250 788 363 732 </p>
+          <p className="text-gray-700">✉ kftvschool@kftv.org | kftvschool@gmail.com</p>
         </div>
 
         {/* Search Bar */}

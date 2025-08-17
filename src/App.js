@@ -23,6 +23,7 @@ function App() {
       <Routes>
         
         <Route path="/" element={<Home/>} />
+         <Route path="/kigaliFilmsandTelevisionSchool" element={<Home/>} />
         <Route path="/about" element={<About />} />
         <Route path="/programs" element={<Programs />} />
         <Route path="/media" element={<Media />} />

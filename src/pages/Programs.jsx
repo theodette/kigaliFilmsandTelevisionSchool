@@ -13,32 +13,32 @@ const Programs = () => {
     {
       title: "Filmmaking and Television Production",
       description: "Immerse yourself in storytelling, cinematography, and production.",
-      image: "D10.jpg",
+      image: "/D10.jpg",
     },
     {
       title: "Photography and Graphic Design",
       description: "Learn the technical and artistic sides of photography and design.",
-      image: "D8.jpg",
+      image: "/D8.jpg",
     },
     {
       title: "3D Animation and Visual Effects",
       description: "Create captivating animations and VFX for film and television.",
-      image: "5.jpeg",
+      image: "/5.jpeg",
     },
     {
       title: "Acting for Film and Television",
       description: "Enhance your skills as an actor and perform for the screen.",
-      image: "acting.jpg",
+      image: "/acting.jpg",
     },
     {
       title: "Music Audio Production",
       description: "Learn how to compose and produce music for films, games, and media.",
-      image: "D4.jpg",
+      image: "/D4.jpg",
     },
     {
       title: "Programming and Software Development",
       description: "Build modern applications with industry-standard tools and practices.",
-      image: "D7.jpg",
+      image: "/D7.jpg",
     },
   ];
 
@@ -236,12 +236,12 @@ const Programs = () => {
             <tr className="border-t">
               <td className="px-6 py-4">Short-Term (3 Months)</td>
               <td className="px-6 py-4">3 Months</td>
-              <td className="px-6 py-4">300,000 RWF / 465 USD</td>
+              <td className="px-6 py-4">450,000 RWF / 400 USD</td>
             </tr>
             <tr className="border-t">
               <td className="px-6 py-4">Short-Term (6 Months)</td>
               <td className="px-6 py-4">6 Months</td>
-              <td className="px-6 py-4">770,000 RWF / 775 USD</td>
+              <td className="px-6 py-4">770,000 RWF / 700 USD</td>
             </tr>
             <tr className="border-t">
               <td className="px-6 py-4">One-Year Program</td>
@@ -252,7 +252,7 @@ const Programs = () => {
           <tfoot className="font-semibold border-t">
             <tr>
               <td colSpan="3" className="px-4 py-2 text-center text-lg">
-                Registration fee: <b>150,000 RWF</b> (one-time payment)
+                Registration fee: <b>13500 RWF</b> (one-time payment)
               </td>
             </tr>
           </tfoot>

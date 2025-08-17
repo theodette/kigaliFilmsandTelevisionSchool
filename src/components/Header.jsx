@@ -17,7 +17,7 @@ const Header = () => {
         {/* Logo */}
         <NavLink to="/">
           <img
-            src="logo1.png"
+            src="/logo1.png"
             alt="Kigali Film and Television School Logo"
             className="h-12"
           />
