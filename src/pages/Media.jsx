@@ -24,7 +24,7 @@ export default function Media() {
           >
             <SwiperSlide>
               <img
-                src="am1.jpeg"
+                src="./am1.jpeg"
                 alt="Ambassador visit"
                 className="w-full h-full object-cover transform hover:scale-105 transition-transform duration-500"
               />
@@ -32,7 +32,7 @@ export default function Media() {
 
             <SwiperSlide>
               <img
-                src="am2.jpeg"
+                src="./am2.jpeg"
                 alt="Ambassador visit 2"
                 className="w-full h-full object-cover transform hover:scale-105 transition-transform duration-500"
               />
@@ -76,7 +76,7 @@ export default function Media() {
              {/* Image */}
             <div className="w-full md:w-1/2 overflow-hidden rounded-xl">
               <img
-                src="am3.jpeg"
+                src="./am3.jpeg"
                 alt="Maison Shalom partnership"
                 className="w-full h-full object-cover transform hover:scale-105 transition-transform duration-500"
               />
@@ -112,7 +112,7 @@ export default function Media() {
           >
             <SwiperSlide>
               <img
-                src="am6.jpeg"
+                src="./am6.jpeg"
                 alt="Ambassador visit"
                 className="w-full h-full object-cover transform hover:scale-105 transition-transform duration-500"
               />
@@ -120,7 +120,7 @@ export default function Media() {
 
             <SwiperSlide>
               <img
-                src="am7.jpeg"
+                src="./am7.jpeg"
                 alt="Ambassador visit 2"
                 className="w-full h-full object-cover transform hover:scale-105 transition-transform duration-500"
               />
@@ -152,7 +152,7 @@ export default function Media() {
 
             <SwiperSlide>
               <img
-                src="am9.jpeg"
+                src="./am9.jpeg"
                 alt="Ambassador visit 2"
                 className="w-full h-full object-cover transform hover:scale-105 transition-transform duration-500"
               />
@@ -198,7 +198,7 @@ School to support the development of the film and photography industries
              {/* Image */}
             <div className="w-full md:w-1/2 overflow-hidden rounded-xl">
               <img
-                src="am10.jpeg"
+                src="./am10.jpeg"
                 alt="Maison Shalom partnership"
                 className="w-full h-full object-cover transform hover:scale-105 transition-transform duration-500"
               />
