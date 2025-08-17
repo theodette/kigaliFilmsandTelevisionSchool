@@ -18,7 +18,7 @@ const About = () => {
         <div className="space-y-6 text-gray-900 leading-relaxed text-lg">
           <p>
             <span className="font-semibold text-red-600">Kigali Film and Television School (KFTV)</span> 
-            is Rwanda's leading film school, accredited by WDA, training professionals in filmmaking, photography, acting, music audio production, graphic design, animation, and visual effects. In the past five years, KFTV has trained over 1,000 professionals who are making their mark across Rwanda, East Africa, and the world.
+            is Rwanda's leading film school training professionals in filmmaking, photography, acting, music audio production, graphic design, animation, and visual effects. In the past five years, KFTV has trained over 1,000 professionals who are making their mark across Rwanda, East Africa, and the world.
           </p>
 
           <p>

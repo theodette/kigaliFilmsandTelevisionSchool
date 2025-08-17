@@ -1,6 +1,18 @@
 import React from "react";
 
 const Donate = () => {
+
+  const videos = [
+  "https://www.youtube.com/embed/whq-ovRxML0",
+  "https://www.youtube.com/embed/wVbB9yU1mzE",
+  "https://www.youtube.com/embed/KCQ1nLQr4DU",
+  "https://www.youtube.com/embed/JhvvTSyYhLw",
+  "https://www.youtube.com/embed/xTuMzDIIXi0",
+  "https://www.youtube.com/embed/9FXiWKisbT4",
+  "https://www.youtube.com/embed/jFNsJ7Wj9Lg"
+];
+
+
   return (
     <section className="bg-[#f4f6f8] py-16 px-4 sm:px-8 lg:px-20">
       <div className="max-w-6xl mx-auto space-y-12">
@@ -36,16 +48,16 @@ const Donate = () => {
           <h2 className="text-2xl font-bold text-gray-900 mb-4">
             Where Your Money Goes
           </h2>
-          <p>Every donation supports scholarship opportunities in programs such as:</p>
-          <ul className="list-disc list-inside text-gray-700 space-y-2">
-            <li>🎬 Filmmaking & Television Production</li>
-            <li>📸 Photography & Graphic Design</li>
-            <li>🎙 Music & Audio Production</li>
-            <li>🎭 Acting for Film & TV</li>
-            <li>🎨 Animation & Visual Effects</li>
+          <p>Every donation supports scholarship opportunities in programs such as</p>
+          <ul className="list-inside text-gray-700 space-y-2">
+            <li> Filmmaking & Television Production</li>
+            <li> Photography & Graphic Design</li>
+            <li> Music & Audio Production</li>
+            <li> Acting for Film & TV</li>
+            <li> Animation & Visual Effects</li>
           </ul>
           <p>Example of Your Impact:</p>
-          <ul className="list-disc list-inside text-gray-700 space-y-2">
+          <ul className=" list-inside text-gray-700 space-y-2">
             <li>$50 – Supports basic learning materials for students.</li>
             <li>$200 – Covers a month of tuition for a partial scholar.</li>
             <li>$500 – Funds a full semester for a student from a rural area.</li>
@@ -58,7 +70,7 @@ const Donate = () => {
           <h2 className="text-2xl font-bold text-gray-900 mb-4">
             Our Commitment to Transparency
           </h2>
-          <ul className="list-disc list-inside text-gray-700 space-y-2">
+          <ul className=" list-inside text-gray-700 space-y-2">
             <li>Regular updates and student success stories.</li>
             <li>Financial accountability reports for all scholarship funds.</li>
             <li>Opportunities to connect with the students you help.</li>
@@ -68,13 +80,31 @@ const Donate = () => {
         {/* Ways to Give */}
         <div className="bg-white p-8 rounded-2xl shadow-md space-y-6">
           <h2 className="text-2xl font-bold text-gray-900 mb-4">Ways to Give</h2>
-          <ul className="list-disc list-inside text-gray-700 space-y-2">
+          <ul className=" list-inside text-gray-700 space-y-2">
             <li>One-Time Donation – Any amount makes a real difference.</li>
             <li>Monthly Giving – Commit to ongoing support and change lives every month.</li>
             <li>Corporate Sponsorship – Partner with KFTV to fund multiple scholarships.</li>
             <li>In-Kind Contributions – Donate equipment, resources, or services that support student learning.</li>
           </ul>
         </div>
+
+        <section className=" ">
+           {/* Videos */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+          {videos.map((video, index) => (
+            <div key={index} className="rounded-xl overflow-hidden shadow-lg">
+              <iframe
+                className="w-full h-64 sm:h-56 lg:h-64"
+                src={video}
+                title={`Video ${index + 1}`}
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              ></iframe>
+            </div>
+          ))}
+        </div>
+        </section>
 
         {/* Call-to-Action */}
         <div className="bg-red-600 text-white p-8 rounded-2xl text-center space-y-4">
