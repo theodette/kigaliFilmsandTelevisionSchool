@@ -13,32 +13,32 @@ const Programs = () => {
     {
       title: "Filmmaking and Television Production",
       description: "Immerse yourself in storytelling, cinematography, and production.",
-      image: "./D10.jpg",
+      image: "D10.jpg",
     },
     {
       title: "Photography and Graphic Design",
       description: "Learn the technical and artistic sides of photography and design.",
-      image: "./D8.jpg",
+      image: "D8.jpg",
     },
     {
       title: "3D Animation and Visual Effects",
       description: "Create captivating animations and VFX for film and television.",
-      image: "/5.jpeg",
+      image: "D5.jpeg",
     },
     {
       title: "Acting for Film and Television",
       description: "Enhance your skills as an actor and perform for the screen.",
-      image: "./acting.jpg",
+      image: "acting.jpg",
     },
     {
       title: "Music Audio Production",
       description: "Learn how to compose and produce music for films, games, and media.",
-      image: "./D4.jpg",
+      image: "D4.jpg",
     },
     {
       title: "Programming and Software Development",
       description: "Build modern applications with industry-standard tools and practices.",
-      image: "./D7.jpg",
+      image: "D7.jpg",
     },
   ];
 

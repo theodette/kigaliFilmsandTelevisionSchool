@@ -214,7 +214,7 @@ const Counter = ({ target, duration = 2000 }) => {
             loop
             playsInline
           >
-            <source src="./video.mp4" type="video/mp4" />
+            <source src="video.mp4" type="video/mp4" />
           </video>
         </div>
       </section>
@@ -312,7 +312,7 @@ const Counter = ({ target, duration = 2000 }) => {
           <AnimatedSection
             
           >
-            <img src="./D4.jpg" alt="Selection Process" className="w-full h-64 object-cover opacity-75" />
+            <img src="D4.jpg" alt="Selection Process" className="w-full h-64 object-cover opacity-75" />
             <div className="absolute inset-0 bg-black bg-opacity-60 flex flex-col justify-end p-6 text-gray-100">
               <h3 className="text-lg sm:text-xl md:text-2xl font-bold">Student's Life</h3>
               <p className="mt-2 text-sm sm:text-base">
@@ -325,7 +325,7 @@ const Counter = ({ target, duration = 2000 }) => {
           <AnimatedSection
            
           >
-            <img src="./D10.jpg" alt="How to Apply" className="w-full h-64 object-cover opacity-75" />
+            <img src="D10.jpg" alt="How to Apply" className="w-full h-64 object-cover opacity-75" />
             <div className="absolute inset-0 bg-black bg-opacity-60 flex flex-col justify-end p-6 text-gray-100">
               <h3 className="text-lg sm:text-xl md:text-2xl font-bold">Media</h3>
               <p className="mt-2 text-sm sm:text-base">
