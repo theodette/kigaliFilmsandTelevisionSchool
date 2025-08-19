@@ -2,14 +2,11 @@ import React from 'react';
 import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
 import Header from './components/Header';
 import Footer from './components/Footer';
-import Index from './pages/Index';
 import Home from './pages/Home';
 import About from './pages/About';
 import Programs from './pages/Programs';
 import Media from './pages/Media';
 import Contact from './pages/Contact';
-import Loging from './admin/Loging';
-import Messages from './admin/Messages';
 import StudentLife from './pages/StudentLife';
 import Scholarship from './pages/Scholarship';
 import Donate from './pages/Donate';
@@ -31,8 +28,7 @@ function App() {
           <Route path="/Life" element={<StudentLife />} />
         <Route path="/contact" element={<Contact />} />
          <Route path="/scholarship" element={<Scholarship/>} />
-        <Route path="/adm/msgs" element={<Messages />} />
-        <Route path="/adm/auth/login" element={<Loging />} />
+       
       </Routes>
       <ConditionalFooter />
      
