@@ -40,20 +40,26 @@ export default function Media() {
           </Swiper>
         </div>
 
-        {/* Text Content */}
-        <div className="w-full md:w-1/2 space-y-6">
-          <h1 className="text-2xl md:text-3xl font-extrabold text-gray-900 leading-snug">
-            The Israel Ambassador to Rwanda Visits Kigali Film and Television School
-          </h1>
-          <p className="text-gray-700 leading-relaxed">
-            The Ambassador of Israel to Rwanda, Dr. Ron Adam, visited Kigali Film and Television School, 
-            commended its work in training youth, and provided financial support to upgrade equipment 
-            and sustain operations during COVID-19.
-          </p>
-          <button className="inline-block bg-red-600 text-white font-medium py-3 px-6 rounded-lg shadow-md hover:bg-red-700 transition-colors duration-300">
-            Read More
-          </button>
-        </div>
+       {/* Text Content */}
+<div className="w-full md:w-1/2 space-y-6">
+  <h1 className="text-2xl md:text-3xl font-extrabold text-gray-900 leading-snug">
+    The Israel Ambassador to Rwanda Visits Kigali Film and Television School
+  </h1>
+  <p className="text-gray-700 leading-relaxed">
+    The Ambassador of Israel to Rwanda, Dr. Ron Adam, visited Kigali Film and Television School, 
+    commended its work in training youth, and provided financial support to upgrade equipment 
+    and sustain operations during COVID-19.
+  </p>
+  
+  <a
+    href="/documents/IsraelAmbasador.docx" // Path to your .docx file in the public folder
+    download
+    className="inline-block bg-[#ff0000] hover:bg-black text-white px-6 py-3 rounded-full font-semibold shadow-lg transition"
+  >
+    Read More
+  </a>
+</div>
+
 
       </div>
         {/* part 2 */}
@@ -69,9 +75,13 @@ export default function Media() {
                 in filmmaking, graphic design, and photography. Leaders encouraged the students to stay disciplined, 
                 innovative, and committed to becoming future multimedia professionals.
               </p>
-              <button className="inline-block bg-red-600 text-white font-medium py-3 px-6 rounded-lg shadow-md hover:bg-red-700 transition-colors duration-300">
-                Read More
-              </button>
+              <a
+    href="/documents/MaisonShalom.docx" // Path to your .docx file in the public folder
+    download
+    className="inline-block bg-[#ff0000] hover:bg-black text-white px-6 py-3 rounded-full font-semibold shadow-lg transition"
+  >
+    Read More
+  </a>
             </div>
              {/* Image */}
             <div className="w-full md:w-1/2 overflow-hidden rounded-xl">
@@ -94,9 +104,13 @@ export default function Media() {
             Award-winning filmmaker Damian Kocur conducted a masterclass at Kigali Film and Television School, sharing his filmmaking process, screening his works,
              and giving students valuable insights into cinematography and production
           </p>
-          <button className="inline-block bg-red-600 text-white font-medium py-3 px-6 rounded-lg shadow-md hover:bg-red-700 transition-colors duration-300">
-            Read More
-          </button>
+          <a
+    href="/documents/DamianVisit.docx" // Path to your .docx file in the public folder
+    download
+    className="inline-block bg-[#ff0000] hover:bg-black text-white px-6 py-3 rounded-full font-semibold shadow-lg transition"
+  >
+    Read More
+  </a>
         </div>
 
    {/* Image Slider */}
@@ -170,9 +184,13 @@ export default function Media() {
              conducted a workshop at KFTV School, sharing his production process, project planning, pitching strategies, and practical filmmaking tips,
              while encouraging students to create using available resources
           </p>
-          <button className="inline-block bg-red-600 text-white font-medium py-3 px-6 rounded-lg shadow-md hover:bg-red-700 transition-colors duration-300">
-            Read More
-          </button>
+   <a
+    href="documents/DamolaVisit.docx" // Path to your .docx file in the public folder
+    download
+    className="inline-block bg-[#ff0000] hover:bg-black text-white px-6 py-3 rounded-full font-semibold shadow-lg transition"
+  >
+    Read More
+  </a>
         </div>
 
       </div>
@@ -191,7 +209,7 @@ School to support the development of the film and photography industries
                 training and exposure to the latest Canon technology. The initiative, part of Canon’s Miraisha Programme, empowers 
                 participants with skills to advance in Rwanda’s creative arts industry
               </p>
-              <button className="inline-block bg-red-600 text-white font-medium py-3 px-6 rounded-lg shadow-md hover:bg-red-700 transition-colors duration-300">
+              <button className="inline-block bg-[#ff0000] hover:bg-black text-white px-6 py-3 rounded-full font-semibold shadow-lg transition">
                 Read More
               </button>
             </div>

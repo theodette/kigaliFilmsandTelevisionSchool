@@ -9,6 +9,8 @@ import 'swiper/css/pagination';
 
 function Home() {
   const applicationLink = "https://forms.gle/X1dbz4QjQ8Z5oXkH9";
+const homeYoutube = "https://www.youtube.com/embed/mDjFvKQeybA?autoplay=1&mute=1";
+
   const [muted, setMuted] = useState(true);
   const iframeRef = useRef(null);
 
@@ -142,7 +144,7 @@ const Counter = ({ target, duration = 2000 }) => {
       <section className="bg-white py-12 sm:py-16 px-4 sm:px-6 lg:px-20">
         <div className="max-w-7xl mx-auto grid grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-12 items-center">
           {/* Image */}
-          <div className="relative rounded-b-2xl shadow-lg overflow-hidden">
+          <div className="rounded-b-2xl  ">
             <img
               src="./D2.jpg"
               alt="Kigali Film and Television School Studio"
@@ -220,7 +222,7 @@ const Counter = ({ target, duration = 2000 }) => {
       </section>
 
       {/* PROGRAM SECTION */}
-<div className="w-full py-20 px-4 bg-gray-50">
+<div className="w-full py-20 px-4 bg-white">
 
   {/* Section Heading */}
   <div className="text-center mb-12">
@@ -253,6 +255,7 @@ const Counter = ({ target, duration = 2000 }) => {
   </div>
 
 </div>
+
 
 
  {/* Impact / Stats Section */}
@@ -297,44 +300,55 @@ const Counter = ({ target, duration = 2000 }) => {
 </AnimatedSection>
 
       {/* FINAL CTA SECTION */}
-      <section className="py-12 sm:py-16 bg-[#e6f4fa]">
-        <div className="container mx-auto px-4 sm:px-6 text-center mb-12">
-          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-[#ff0000]">
-            Unlock Your Potential with Kigali Film Academy
-          </h2>
-          <p className="text-sm sm:text-base md:text-lg font-sans font-medium mt-4 text-gray-600 max-w-4xl mx-auto">
-            Contact us today to learn more about our programs, admission process...
-          </p>
-        </div>
+    <section className="py-12 sm:py-16 bg-[#e6f4fa]">
+  <div className="container mx-auto px-4 sm:px-6 text-center mb-12">
+    <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-[#ff0000]">
+      Unlock Your Potential with Kigali Film Academy
+    </h2>
+    <p className="text-sm sm:text-base md:text-lg font-sans font-medium mt-4 text-gray-600 max-w-4xl mx-auto">
+      Contact us today to learn more about our programs, admission process...
+    </p>
+  </div>
 
-        <div className="grid md:grid-cols-2 gap-8 lg:gap-12 max-w-6xl mx-auto px-4 sm:px-6">
-          {/* Student Life */}
-          <AnimatedSection
-            
-          >
-            <img src="D4.jpg" alt="Selection Process" className="w-full h-64 object-cover opacity-75" />
-            <div className="absolute inset-0 bg-black bg-opacity-60 flex flex-col justify-end p-6 text-gray-100">
-              <h3 className="text-lg sm:text-xl md:text-2xl font-bold">Student's Life</h3>
-              <p className="mt-2 text-sm sm:text-base">
-                We assist our students in finding accommodation...
-              </p>
-            </div>
-          </AnimatedSection>
+  <div className="max-w-6xl mx-auto px-4 sm:px-6">
+    {/* YouTube Video */}
+    <div className="mb-12 relative w-full h-0" style={{ paddingBottom: '56.25%' }}>
+     <iframe
+  className="absolute top-0 left-0 w-full h-full rounded-xl shadow-lg"
+  src={homeYoutube}
+  title="Kigali Film Academy Overview"
+  frameBorder="0"
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+  allowFullScreen
+></iframe>
 
-          {/* Media */}
-          <AnimatedSection
-           
-          >
-            <img src="D10.jpg" alt="How to Apply" className="w-full h-64 object-cover opacity-75" />
-            <div className="absolute inset-0 bg-black bg-opacity-60 flex flex-col justify-end p-6 text-gray-100">
-              <h3 className="text-lg sm:text-xl md:text-2xl font-bold">Media</h3>
-              <p className="mt-2 text-sm sm:text-base">
-                Go to our media, explore the experience of our students
-              </p>
-            </div>
-          </AnimatedSection>
-        </div>
-      </section>
+    </div>
+
+    {/* Links to Student Life & Media */}
+    <div className="grid md:grid-cols-2 gap-8 lg:gap-12 text-center">
+      <a
+        href="/life"
+        className="bg-red-600 hover:bg-black transition text-white rounded-xl p-8 flex flex-col justify-center items-center shadow-lg"
+      >
+        <h3 className="text-lg sm:text-xl md:text-2xl font-bold mb-2">Student Life</h3>
+        <p className="text-sm sm:text-base">
+          Explore vibrant student experiences, campus life, and support services.
+        </p>
+      </a>
+
+      <a
+        href="/media"
+        className="bg-red-600 hover:bg-black transition text-white rounded-xl p-8 flex flex-col justify-center items-center shadow-lg"
+      >
+        <h3 className="text-lg sm:text-xl md:text-2xl font-bold mb-2">Media</h3>
+        <p className="text-sm sm:text-base">
+          Discover our students’ creative projects, films, and media events.
+        </p>
+      </a>
+    </div>
+  </div>
+</section>
+
     </div>
   );
 }

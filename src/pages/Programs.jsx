@@ -1,3 +1,4 @@
+import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, Autoplay } from "swiper/modules";
 import { useState, useEffect, useRef } from "react";
@@ -5,9 +6,13 @@ import { motion, useInView } from "framer-motion";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
+import { CheckCircle, Camera, PenTool, Monitor, Layers } from "lucide-react";
+
 
 const Programs = () => {
   const applicationLink = "https://forms.gle/X1dbz4QjQ8Z5oXkH9";
+    const shortCourse = "https://forms.gle/jj99NRyXDpwnfMF89";
+      const internship = "https://forms.gle/LmNKPbbV7ozK1LiG8";
 
   const programs = [
     {
@@ -23,7 +28,7 @@ const Programs = () => {
     {
       title: "3D Animation and Visual Effects",
       description: "Create captivating animations and VFX for film and television.",
-      image: "D5.jpeg",
+      image: "D12.jpeg",
     },
     {
       title: "Acting for Film and Television",
@@ -39,6 +44,41 @@ const Programs = () => {
       title: "Programming and Software Development",
       description: "Build modern applications with industry-standard tools and practices.",
       image: "D7.jpg",
+    },
+  ];
+
+  const courses = [
+    {
+      title: "AI for Film & Multimedia",
+      desc: "Discover how AI is transforming filmmaking, editing, sound design, and VFX.",
+    },
+    {
+      title: "Social Media Management",
+      desc: "Master strategies to grow audiences and drive engagement.",
+    },
+    {
+      title: "Photography",
+      desc: "From camera handling to composition — capture stunning images.",
+    },
+    {
+      title: "Digital Editing",
+      desc: "Learn professional video editing with industry-standard tools.",
+    },
+    {
+      title: "Digital Marketing",
+      desc: "Build brands online and create strategies that deliver results.",
+    },
+    {
+      title: "Web Design",
+      desc: "Design and manage responsive, modern websites.",
+    },
+    {
+      title: "Image Editing",
+      desc: "Master photo retouching and image manipulation for pro visuals.",
+    },
+    {
+      title: "Camera Operation",
+      desc: "Hands-on training in framing, shooting, and storytelling.",
     },
   ];
 
@@ -116,12 +156,20 @@ const Programs = () => {
     "Conduct masterclasses or workshops",
   ];
 
+  const fadeUp = (delay = 0) => ({
+initial: { opacity: 0, y: 20 },
+animate: { opacity: 1, y: 0, transition: { duration: 0.6, delay } },
+});
+
+const ref = React.useRef(null);
+  const isInView = useInView(ref, { once: true });
+
 
   return (
     <div className="w-full">
       {/* Header Section */}
       <div className="text-center mb-12 px-4">
-        <h1 className="text-3xl sm:text-4xl font-bold text-[#ff0000] mb-4">
+        <h1 className="text-3xl sm:text-4xl font-bold pt-10 text-gray-700 mb-4">
           Find Your Right Program
         </h1>
         <p className="text-gray-800 text-lg sm:text-xl max-w-3xl mx-auto">
@@ -145,7 +193,7 @@ const Programs = () => {
                 className="w-full h-56 object-cover"
               />
               <div className="p-5">
-                <h3 className="text-xl font-bold text-[#ff0000] mb-2">
+                <h3 className="text-xl font-bold text-black mb-2">
                   {program.title}
                 </h3>
                 <p className="text-gray-700">{program.description}</p>
@@ -156,7 +204,7 @@ const Programs = () => {
 
         <div className="flex justify-center mt-10">
           <a href={applicationLink}>
-            <button className="bg-white border border-[#ff0000] text-[#ff0000] px-6 py-2 rounded-md text-lg font-semibold hover:text-white hover:bg-[#ff0000] transition">
+            <button className="inline-block bg-[#ff0000] hover:bg-black text-white px-6 py-3 rounded-full font-semibold shadow-lg transition">
               Apply Now
             </button>
           </a>
@@ -211,7 +259,7 @@ const Programs = () => {
 
       {/* Fees Section */}
       <div className="text-center pt-10 px-4 sm:px-10 lg:px-20">
-        <h1 className="text-3xl font-bold text-[#ff0000] mb-4">
+        <h1 className="text-3xl font-bold text-gray-700 mb-4">
           Fees Structure
         </h1>
         <p className="max-w-4xl mx-auto text-lg text-gray-700">
@@ -269,15 +317,15 @@ const Programs = () => {
         </p>
         <a
           href="/scholarship"
-          className="inline-block bg-[#ff0000] text-white px-4 py-2 rounded-md font-semibold hover:bg-[#cc0000] transition"
+          className="inline-block bg-[#ff0000] hover:bg-black text-white px-6 py-3 rounded-full font-semibold shadow-lg transition"
         >
           read more....
         </a>
       </div>
 
-      <section className="bg-[#f9f9f9] py-16 px-6 lg:px-20">
+      <section className="bg-[#e6f4fa] py-16 px-6 lg:px-20">
       <div className="text-center mb-12">
-        <h2 className="text-3xl sm:text-4xl font-bold text-[#ff0000] mb-4">
+        <h2 className="text-3xl sm:text-4xl font-bold text-gray-700 mb-4">
           Internship, Volunteering & Visiting Opportunities
         </h2>
         <p className="text-gray-800 max-w-3xl mx-auto text-lg sm:text-xl">
@@ -290,7 +338,7 @@ const Programs = () => {
       {/* Internship for Students */}
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-10 mb-16">
         <div className="bg-white rounded-xl shadow-lg p-6 hover:shadow-2xl transition">
-          <h3 className="text-2xl font-bold text-[#ff0000] mb-4">
+          <h3 className="text-2xl font-bold text-gray-700 mb-4">
             Internship Programs - Students
           </h3>
           <p className="text-gray-700 mb-3">
@@ -313,7 +361,7 @@ const Programs = () => {
 
         {/* Internship for Graduates */}
         <div className="bg-white rounded-xl shadow-lg p-6 hover:shadow-2xl transition">
-          <h3 className="text-2xl font-bold text-[#ff0000] mb-4">
+          <h3 className="text-2xl font-bold text-gray-700 mb-4">
             Internship Programs - Graduates
           </h3>
           <p className="text-gray-700 mb-3">
@@ -328,7 +376,7 @@ const Programs = () => {
 
         {/* Volunteering & Visiting */}
         <div className="bg-white rounded-xl shadow-lg p-6 hover:shadow-2xl transition">
-          <h3 className="text-2xl font-bold text-[#ff0000] mb-4">
+          <h3 className="text-2xl font-bold text-gray-700 mb-4">
             Volunteering & Visiting
           </h3>
           <p className="text-gray-700 font-semibold mb-2">Volunteering Opportunities:</p>
@@ -344,7 +392,70 @@ const Programs = () => {
             ))}
           </ul>
         </div>
+
       </div>
+       <a
+            href={internship}
+            className="inline-block bg-[#ff0000] hover:bg-black text-white px-6 py-3 rounded-full font-semibold shadow-lg transition"
+          >
+            Apply Now
+          </a>
+    </section>
+
+
+{/* short course */}
+
+<section className="bg-white py-16 px-6 sm:px-12 lg:px-24">
+      <motion.div
+        ref={ref}
+        initial={{ opacity: 0, x: -50 }}
+        animate={isInView ? { opacity: 1, x: 0 } : {}}
+        transition={{ duration: 1 }}
+        className="max-w-7xl mx-auto flex flex-col lg:flex-row gap-12 items-start"
+      >
+        {/* Left Paragraph */}
+        <div className="flex-1 ">
+          <h2 className="text-3xl sm:text-4xl font-bold text-gray-700 mb-4">
+            One-Month Specialized Courses at KFTV
+          </h2>
+          <p className="text-gray-700 text-base sm:text-lg mb-6">
+            Fast-track your creative career with our intensive one-month programs.
+            Designed for beginners, freelancers, and industry professionals, these
+            hands-on courses provide practical skills and expert mentorship to help
+            you thrive in today’s competitive media and digital industries.
+          </p>
+      
+          <img src="D13.jpeg" alt="" />
+
+        </div>
+
+        {/* Right Courses List */}
+        <div>
+     
+        </div>
+        <div className="flex-1 grid grid-cols-1 sm:grid-cols-2 gap-6">
+          {courses.map((course, idx) => (
+            <motion.div
+              key={idx}
+              initial={{ opacity: 0, y: 30 }}
+              animate={isInView ? { opacity: 1, y: 0 } : {}}
+              transition={{ delay: idx * 0.1, duration: 0.5 }}
+              className="bg-white rounded-xl p-4 shadow-2xl hover:shadow-xl transition"
+            >
+              <h3 className="text-lg font-semibold text-gray-900 mb-1">{course.title}</h3>
+              <p className="text-gray-600 text-sm">{course.desc}</p>
+            </motion.div>
+          ))}
+                 <a
+            href={shortCourse}
+            className="inline-block bg-[#ff0000] hover:bg-black text-white px-6 py-3 rounded-full font-semibold shadow-lg transition"
+          >
+            Apply Now
+          </a>
+        </div>
+        
+      </motion.div>
+        
     </section>
     </div>
   );

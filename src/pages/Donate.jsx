@@ -14,7 +14,7 @@ const Donate = () => {
 
 
   return (
-    <section className="bg-[#f4f6f8] py-16 px-4 sm:px-8 lg:px-20">
+    <section className="bg-[#e6f4fa] py-16 px-4 sm:px-8 lg:px-20">
       <div className="max-w-6xl mx-auto space-y-12">
         
         {/* Heading */}
