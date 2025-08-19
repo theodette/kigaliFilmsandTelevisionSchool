@@ -262,22 +262,19 @@ const Counter = ({ target, duration = 2000 }) => {
   <AnimatedSection className="bg-gradient-to-r from-[#ff0000] via-[#ff7f50] to-black py-16 px-4 sm:px-6 lg:px-8 rounded-xl shadow-lg">
   <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 text-center">
     <div className="bg-white rounded-xl p-6 shadow-md hover:scale-105 transform transition duration-300">
+         <p className="mt-2 text-gray-600 text-sm sm:text-base font-medium">
+        Plus
+      </p>
       <div className="text-4xl sm:text-5xl font-extrabold text-[#ff0000]">
-        <Counter target={12000} />
+        <Counter target={1000} />
       </div>
-      <p className="mt-2 text-gray-600 text-sm sm:text-base font-medium">
+         <p className="mt-2 text-gray-600 text-sm sm:text-base font-medium">
         Alumni Worldwide
       </p>
+   
     </div>
 
-    <div className="bg-white rounded-xl p-6 shadow-md hover:scale-105 transform transition duration-300">
-      <div className="text-4xl sm:text-5xl font-extrabold text-[#ff7f50]">
-        <Counter target={3500} />
-      </div>
-      <p className="mt-2 text-gray-600 text-sm sm:text-base font-medium">
-        Students Enrolled
-      </p>
-    </div>
+
 
     <div className="bg-white rounded-xl p-6 shadow-md hover:scale-105 transform transition duration-300">
       <div className="text-4xl sm:text-5xl font-extrabold text-[#ffd700]">
@@ -290,7 +287,7 @@ const Counter = ({ target, duration = 2000 }) => {
 
     <div className="bg-white rounded-xl p-6 shadow-md hover:scale-105 transform transition duration-300">
       <div className="text-4xl sm:text-5xl font-extrabold text-[#00bfff]">
-        <Counter target={6} />
+        <Counter target={7} />
       </div>
       <p className="mt-2 text-gray-600 text-sm sm:text-base font-medium">
         Programs Offered
@@ -327,7 +324,7 @@ const Counter = ({ target, duration = 2000 }) => {
     {/* Links to Student Life & Media */}
     <div className="grid md:grid-cols-2 gap-8 lg:gap-12 text-center">
       <a
-        href="/life"
+        href="/Life"
         className="bg-red-600 hover:bg-black transition text-white rounded-xl p-8 flex flex-col justify-center items-center shadow-lg"
       >
         <h3 className="text-lg sm:text-xl md:text-2xl font-bold mb-2">Student Life</h3>
